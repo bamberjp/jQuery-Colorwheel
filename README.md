@@ -17,11 +17,11 @@ In the body of the document create a container.
 Define the containers dimensions.
 ```css
 <style>
-  #widget {
-    display: block;
-		width: 200px;
-		height: 200px;	
-  }
+#widget {
+	display: block;
+	width: 200px;
+	height: 200px;	
+ }
 </style>
 ```
 Initialize the widget
