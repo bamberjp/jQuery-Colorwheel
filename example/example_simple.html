@@ -1,0 +1,33 @@
+<!--
+	Demonstration of Jquery Colorwheel
+
+	version: 1.0
+	author: Johnathan Bamber (bamberjp@gmail.com)
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<script
+		  src="https://code.jquery.com/jquery-3.2.1.js"
+		  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+		  crossorigin="anonymous"></script>
+		<script src="../dist/jquery.colorwheel.js"></script>
+		<link rel="stylesheet" type="text/css" href="../dist/jquery.colorwheel.css">
+		<style>
+			#chart {
+				display: block;
+				width: 200px;
+				height: 200px;	
+			}
+		</style>
+		<script>
+			jQuery(document).ready(function($) {
+				$("#chart").colorwheel();
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Colorwheel Example</h1>
+		<div id="chart"></div>
+	</body>
+</html>

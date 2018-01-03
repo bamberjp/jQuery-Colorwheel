@@ -1,0 +1,55 @@
+<!--
+	Demonstration of Jquery Colorwheel with a custom Palette
+
+	version: 1.0
+	author: Johnathan Bamber (bamberjp@gmail.com)
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<script
+		  src="https://code.jquery.com/jquery-3.2.1.js"
+		  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+		  crossorigin="anonymous"></script>
+		<script src="../dist/jquery.colorwheel.js"></script>
+		<link rel="stylesheet" type="text/css" href="../dist/jquery.colorwheel.css">
+		<style>
+			#chart {
+				display: block;
+				width: 200px;
+				height: 200px;	
+			}
+		</style>
+		<script>
+			jQuery(document).ready(function($) {
+				$("#chart").colorwheel('init',
+					['000000', 
+					 '111111', 
+					 '222222', 
+					 '333333', 
+					 '444444', 
+					 '555555', 
+					 '666666', 
+					 '777777', 
+					 '888888', 
+					 '999999', 
+					 'aaaaaa', 
+					 'bbbbbb', 
+					 'cccccc', 
+					 'dddddd', 
+					 'eeeeee', 
+					 'ffffff']
+				);
+				
+				$("#chart").click(function() {
+					$("#selected").html("Selected Color: " + $(this).colorwheel('value'));
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Colorwheel Example</h1>
+		<div id="chart"></div>
+		<p id="selected"></p>
+	</body>
+</html>
