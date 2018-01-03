@@ -14,7 +14,7 @@
 		<script src="../dist/jquery.colorwheel.js"></script>
 		<link rel="stylesheet" type="text/css" href="../dist/jquery.colorwheel.css">
 		<style>
-			#chart {
+			#widget {
 				display: block;
 				width: 200px;
 				height: 200px;	
@@ -22,7 +22,7 @@
 		</style>
 		<script>
 			jQuery(document).ready(function($) {
-				$("#chart").colorwheel('init',
+				$("#widget").colorwheel('init',
 					['000000', 
 					 '111111', 
 					 '222222', 
@@ -41,7 +41,7 @@
 					 'ffffff']
 				);
 				
-				$("#chart").click(function() {
+				$("#widget").click(function() {
 					$("#selected").html("Selected Color: " + $(this).colorwheel('value'));
 				});
 			});
@@ -49,7 +49,7 @@
 	</head>
 	<body>
 		<h1>Colorwheel Example</h1>
-		<div id="chart"></div>
+		<div id="widget"></div>
 		<p id="selected"></p>
 	</body>
 </html>
